@@ -23,7 +23,7 @@ This project demonstrates how to use the CAN protocol with an Arduino Uno, MCP25
 
 **Circuit Diagram**
 
-![Circuit Diagram](circuit-diagram.png)
+![Circuit Diagram](circuit-diagram1.jpg)
 
 **Wiring**
 
