@@ -17,8 +17,8 @@ This project demonstrates how to use the CAN protocol with an Arduino Uno, MCP25
    
 **Features**
  - CAN Communication: Transmits temperature and humidity data via the CAN bus.
- - Sensor Data: Reads temperature and humidity from the DHT sensor.
- - Real-time Display: Displays current temperature and humidity on an I2C LCD.
+ - Sensor DataS: Reads temperature and humidity from the DHT sensor , Reads presence of Co2(air Quality) from MQ 5 Gas sensor, Measures the capacity of fuel from SEN18 sensor, LDR Sensor responses to the change in intensity of light .
+ - Real-time Display: Displays current temperature and humidity, Fuel capacity, Air Quality  on an I2C LCD.
  - Modular Design: Easily expand the project to include more sensors or devices communicating over the CAN bus.
 
 **Circuit Diagram**
@@ -41,15 +41,34 @@ This project demonstrates how to use the CAN protocol with an Arduino Uno, MCP25
 **2. DHT11/DHT22 Sensor to Arduino Uno**
  - VCC -> 5V (Arduino Uno)
  - GND -> GND (Arduino Uno)
- - Data -> Pin 8 (Arduino Uno)
+ - Data -> Pin 4 (Arduino Uno)
 
+**3. MQ 5 Sensor to Arduino Uno**
+ - VCC -> 5V (Arduino Uno)
+ - GND -> GND (Arduino Uno)
+ - Data -> Pin A0 (Arduino Uno)   
 
-**3. I2C LCD to Arduino Uno**
+**4. SEN18 Sensor to Arduino Uno**
+ - VCC -> 5V (Arduino Uno)
+ - GND -> GND (Arduino Uno)
+ - Data -> Pin A1 (Arduino Uno)
+
+**5. LDR Sensor to Arduino Uno**
+ - VCC -> 5V (Arduino Uno)
+ - GND -> GND (Arduino Uno)
+ - Data -> Pin 3 (Arduino Uno)
+
+**6. First I2C LCD to Arduino Uno**
  - VCC -> 5V (Arduino Uno)
  - GND -> GND (Arduino Uno)
  - SDA -> SDA (Arduino Uno)
  - SCL -> SCL (Arduino Uno)
 
+**7. Second I2C LCD to Arduino Uno**
+ - VCC -> 5V (Arduino Uno)
+ - GND -> GND (Arduino Uno)
+ - SDA -> A4 (Arduino Uno)
+ - SCL -> A5 (Arduino Uno)
 
 **Libraries Used**
  - mcp2515: For interfacing with the MCP2515 CAN Bus module.
