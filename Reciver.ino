@@ -41,9 +41,9 @@ void loop()
   {
     int h = canMsg.data[0];
     int t = canMsg.data[1];
-    int f = canMsg.data[1];
-    int l = canMsg.data[1];
-    int g = canMsg.data[1];
+    int g = canMsg.data[2];
+    int l = canMsg.data[3];
+    int f = canMsg.data[4];
     
  
     lcd.setCursor(0, 0);         //Display Temp & Humidity value received at 16x2 LCD
